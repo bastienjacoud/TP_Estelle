@@ -6,20 +6,21 @@ using namespace std;
 #include "CChat.h"
 #include "CSouris.h"
 #include <iostream>
+#include <vector>
 
 class CTerrain
 {
-    public:
-        CTerrain(); // Constructeur par défaut
-	    CTerrain(int dimX, int dimY); // Constructeur spécialisé
-        virtual ~CTerrain(); // Destructeur
-	    void Affiche(CChat* chat, CSouris* souris);
-	    int GetDimX(); // Accesseur
-	    int GetDimY(); // Accesseur
+public:
+    CTerrain(); // Constructeur par défaut
+    CTerrain(int dimX, int dimY); // Constructeur spécialisé
+    virtual ~CTerrain(); // Destructeur
+    void Affiche(std::vector<CChat> vchats, std::vector<CSouris> vsouris);
+    int GetDimX(); // Accesseur
+    int GetDimY(); // Accesseur
 
-    protected:
-	    int m_dimX;
-	    int m_dimY;
+protected:
+    int m_dimX;
+    int m_dimY;
 };
 
 #endif

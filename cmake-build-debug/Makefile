@@ -110,6 +110,181 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named TP_Estelle
+
+# Build rule for target.
+TP_Estelle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TP_Estelle
+.PHONY : TP_Estelle
+
+# fast build rule for target.
+TP_Estelle/fast:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/build
+.PHONY : TP_Estelle/fast
+
+CAnimal.o: CAnimal.cpp.o
+
+.PHONY : CAnimal.o
+
+# target to build an object file
+CAnimal.cpp.o:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CAnimal.cpp.o
+.PHONY : CAnimal.cpp.o
+
+CAnimal.i: CAnimal.cpp.i
+
+.PHONY : CAnimal.i
+
+# target to preprocess a source file
+CAnimal.cpp.i:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CAnimal.cpp.i
+.PHONY : CAnimal.cpp.i
+
+CAnimal.s: CAnimal.cpp.s
+
+.PHONY : CAnimal.s
+
+# target to generate assembly for a file
+CAnimal.cpp.s:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CAnimal.cpp.s
+.PHONY : CAnimal.cpp.s
+
+CChat.o: CChat.cpp.o
+
+.PHONY : CChat.o
+
+# target to build an object file
+CChat.cpp.o:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CChat.cpp.o
+.PHONY : CChat.cpp.o
+
+CChat.i: CChat.cpp.i
+
+.PHONY : CChat.i
+
+# target to preprocess a source file
+CChat.cpp.i:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CChat.cpp.i
+.PHONY : CChat.cpp.i
+
+CChat.s: CChat.cpp.s
+
+.PHONY : CChat.s
+
+# target to generate assembly for a file
+CChat.cpp.s:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CChat.cpp.s
+.PHONY : CChat.cpp.s
+
+CJeu.o: CJeu.cpp.o
+
+.PHONY : CJeu.o
+
+# target to build an object file
+CJeu.cpp.o:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CJeu.cpp.o
+.PHONY : CJeu.cpp.o
+
+CJeu.i: CJeu.cpp.i
+
+.PHONY : CJeu.i
+
+# target to preprocess a source file
+CJeu.cpp.i:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CJeu.cpp.i
+.PHONY : CJeu.cpp.i
+
+CJeu.s: CJeu.cpp.s
+
+.PHONY : CJeu.s
+
+# target to generate assembly for a file
+CJeu.cpp.s:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CJeu.cpp.s
+.PHONY : CJeu.cpp.s
+
+CSouris.o: CSouris.cpp.o
+
+.PHONY : CSouris.o
+
+# target to build an object file
+CSouris.cpp.o:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CSouris.cpp.o
+.PHONY : CSouris.cpp.o
+
+CSouris.i: CSouris.cpp.i
+
+.PHONY : CSouris.i
+
+# target to preprocess a source file
+CSouris.cpp.i:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CSouris.cpp.i
+.PHONY : CSouris.cpp.i
+
+CSouris.s: CSouris.cpp.s
+
+.PHONY : CSouris.s
+
+# target to generate assembly for a file
+CSouris.cpp.s:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CSouris.cpp.s
+.PHONY : CSouris.cpp.s
+
+CTerrain.o: CTerrain.cpp.o
+
+.PHONY : CTerrain.o
+
+# target to build an object file
+CTerrain.cpp.o:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CTerrain.cpp.o
+.PHONY : CTerrain.cpp.o
+
+CTerrain.i: CTerrain.cpp.i
+
+.PHONY : CTerrain.i
+
+# target to preprocess a source file
+CTerrain.cpp.i:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CTerrain.cpp.i
+.PHONY : CTerrain.cpp.i
+
+CTerrain.s: CTerrain.cpp.s
+
+.PHONY : CTerrain.s
+
+# target to generate assembly for a file
+CTerrain.cpp.s:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/CTerrain.cpp.s
+.PHONY : CTerrain.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/TP_Estelle.dir/build.make CMakeFiles/TP_Estelle.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +293,25 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... TP_Estelle"
+	@echo "... CAnimal.o"
+	@echo "... CAnimal.i"
+	@echo "... CAnimal.s"
+	@echo "... CChat.o"
+	@echo "... CChat.i"
+	@echo "... CChat.s"
+	@echo "... CJeu.o"
+	@echo "... CJeu.i"
+	@echo "... CJeu.s"
+	@echo "... CSouris.o"
+	@echo "... CSouris.i"
+	@echo "... CSouris.s"
+	@echo "... CTerrain.o"
+	@echo "... CTerrain.i"
+	@echo "... CTerrain.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

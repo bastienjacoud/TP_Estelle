@@ -8,7 +8,7 @@ CAnimal::CAnimal()
     m_dimY = 0;
     m_Xold = -1;
     m_Yold = -1;
-    
+
     m_nbSteps = 1;
     m_step = 1;
 }
@@ -111,5 +111,3 @@ bool CAnimal::UpdatePosition(int dir)
     }
     return isOK;
 }
-
-

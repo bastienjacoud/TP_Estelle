@@ -2,12 +2,12 @@
 
 CSouris::CSouris(): CAnimal::CAnimal(2,1)
 {
-	m_EnFuite = false;
+    m_EnFuite = false;
 }
 
 CSouris::CSouris(int nbSteps, int step): CAnimal::CAnimal(nbSteps,step)
 {
-	m_EnFuite = false;
+    m_EnFuite = false;
 }
 
 CSouris::~CSouris()
@@ -25,7 +25,7 @@ void CSouris::Deplace(int x, int y)
         int dX = x - m_X;
         int dY = y - m_Y;
         double d = sqrt( dX*dX + dY*dY );
-        
+
         if( ((d<5) || m_EnFuite) && (d!=0) ) // si le chat est trop proche (et pas mangé), on fuit
         {
             m_EnFuite = true;
@@ -81,7 +81,7 @@ void CSouris::Deplace(int x, int y)
                     }
                 }
                 isOK = UpdatePosition(dir);
-                
+
                 // plan C = on bouge aléatoirement
                 while(!isOK)
                 {

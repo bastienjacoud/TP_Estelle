@@ -10,18 +10,20 @@ using namespace std;
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 
+#include <vector>
+
 class CJeu
 {
-    public:
-    	CJeu(); // Constructeur par défaut
-	    CJeu(CTerrain* terrain, CChat* chat, CSouris* souris); // Constructeur spécialisé
-        virtual ~CJeu(); // Destructeur
-	    void Launch(int nbIterations);
+public:
+    CJeu(); // Constructeur par défaut
+    CJeu(CTerrain* terrain, std::vector<CChat> chats, std::vector<CSouris> souris); // Constructeur spécialisé
+    virtual ~CJeu(); // Destructeur
+    void Launch(int nbIterations);
 
-    protected:
-	    CTerrain* m_terrain;
-	    CChat* m_chat;
-	    CSouris* m_souris;
+protected:
+    CTerrain* m_terrain;
+    std::vector<CChat> m_chats;
+    std::vector<CSouris> m_souris;
 };
 
 #endif

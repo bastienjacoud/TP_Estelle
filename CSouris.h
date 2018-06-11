@@ -8,14 +8,14 @@ using namespace std;
 
 class CSouris: public CAnimal
 {
-    public:
-        CSouris(); // Constructeur par défaut
-	    CSouris(int nbSteps, int step); // Constructeur spécialisé
-        virtual ~CSouris(); // Destructeur
-	    void Deplace(int x, int y); // Coordonnées à fuir
+public:
+    CSouris(); // Constructeur par défaut
+    CSouris(int nbSteps, int step); // Constructeur spécialisé
+    virtual ~CSouris(); // Destructeur
+    void Deplace(int x, int y); // Coordonnées à fuir
 
-    protected:
-    	bool m_EnFuite; // Statut actuel: 0=repos, 1=en fuite
+protected:
+    bool m_EnFuite; // Statut actuel: 0=repos, 1=en fuite
 
 };
 

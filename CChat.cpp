@@ -2,7 +2,7 @@
 
 CChat::CChat(): CAnimal::CAnimal(1,2)
 {
-
+    indexTarget = -1;
 }
 
 CChat::CChat(int nbSteps, int step): CAnimal::CAnimal(nbSteps,step)
@@ -36,7 +36,7 @@ void CChat::Deplace(int x, int y)
         int dX = x - m_X;
         int dY = y - m_Y;
         double d = sqrt( dX*dX + dY*dY );
-        
+
         if(d<=m_step*sqrt(2)) // si la souris est trop proche, on la mange
         {
             Attaque(x,y);
@@ -66,7 +66,7 @@ void CChat::Deplace(int x, int y)
                 }
             }
             isOK = UpdatePosition(dir);
-            
+
             while(!isOK) // si cette direction n'est pas autorisée
             {
                 int dir = rand() % 4; // direction aléatoire
@@ -76,4 +76,10 @@ void CChat::Deplace(int x, int y)
     }
 }
 
-
+void CChat::UpdateIndex(unsigned long nbSourisDispo, int lastIndexDeleted) {
+    if((indexTarget == -1) || (indexTarget == lastIndexDeleted)) {
+        indexTarget = (int)(rand() % nbSourisDispo);
+    } else if(indexTarget > lastIndexDeleted) {
+        indexTarget--;
+    }
+}
